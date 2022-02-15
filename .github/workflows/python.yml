@@ -38,5 +38,5 @@ jobs:
           python3 test.py
       - name: Print Password
         env:
-          MY_PASSWORD: $ {{ secrets.PASSWORD }}
+          MY_PASSWORD: ${{ secrets.PASSWORD }}
         run: echo My password is $MY_PASSWORD
