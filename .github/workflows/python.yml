@@ -36,3 +36,7 @@ jobs:
       - name: Run python
         run: |
           python3 test.py
+      - name: Print Password
+        env:
+          MY_PASSWORD: $ {{ secrets.PASSWORD }}
+        run: echo My password is $MY_PASSWORD
